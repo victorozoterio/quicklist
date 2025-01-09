@@ -6,11 +6,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quicklist</title>
+    <link rel="icon" href="assets/icons/logo.svg" type="image/png">
     
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="flex">
+        <img src="assets/icons/logo.svg" alt="Logo">
+        <h1>quicklist</h1>
+    </header>
+
+    <main class="container">
+        <div class="return flex">
+            <img src="assets/icons/left-arrow.svg" alt="Icone de flecha apontada para a esquerda">
+            <p>Voltar</p>
+        </div>
+        
+        <section class="shopping">
+            <h2>Compras da semana</h2>
+            
+            <form method="post" class="flex">
+                <input type="text" name="item" id="item" placeholder="Adicione um novo item">
+                <button type="submit">Adicionar item</button>
+            </form>
+
+            <div class="products flex flex-col">
+                <div class="flex">
+                    <div class="checkbox">
+                        <img src="assets/icons/check.svg" alt="Icone de verificado">
+                    </div>
+                    <p>Pão de forma</p>
+                    <img src="assets/icons/dustbin.svg" alt="Icone de lixeira">
+                </div>
+
+                <div class="flex">
+                    <div class="checkbox">
+                        <img src="assets/icons/check.svg" alt="Icone de verificado">
+                    </div>
+                    <p>Café preto</p>
+                    <img src="assets/icons/dustbin.svg" alt="Icone de lixeira">
+                </div>
+
+                <div class="flex">
+                    <div class="checkbox">
+                        <img src="assets/icons/check.svg" alt="Icone de verificado">
+                    </div>
+                    <p>Suco de laranja</p>
+                    <img src="assets/icons/dustbin.svg" alt="Icone de lixeira">
+                </div>
+
+                <div class="flex">
+                    <div class="checkbox">
+                        <img src="assets/icons/check.svg" alt="Icone de verificado">
+                    </div>
+                    <p>Biscoito</p>
+                    <img src="assets/icons/dustbin.svg" alt="Icone de lixeira">
+                </div>
+            </div>
+
+            <div class="exclusion hidden">
+                <div class="flex exclusion-message">
+                    <img src="assets/icons/alert.svg" alt="Icone de alerta">
+                    <p>O item foi removido da lista!</p>
+                    <img src="assets/icons/close.svg" alt="Icone de fechar aba em formato de X">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

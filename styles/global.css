@@ -28,6 +28,23 @@
     --color-danger: #C93847;
 }
 
-p {
-    font: var(--title)
+body {
+    background-color: var(--background-primary);
+}
+
+h1 {
+    font: var(--title);
+    color: var(--content-secondary);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
 }
