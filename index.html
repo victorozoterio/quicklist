@@ -27,45 +27,14 @@
             <h2>Compras da semana</h2>
             
             <form method="post" class="flex">
-                <input type="text" name="item" id="item" placeholder="Adicione um novo item">
+                <input type="text" name="item" id="item" placeholder="Adicione um novo item" autofocus>
                 <button type="submit">Adicionar item</button>
             </form>
 
             <div class="products flex flex-col">
-                <div class="flex">
-                    <div class="checkbox">
-                        <img src="assets/icons/check.svg" alt="Icone de verificado">
-                    </div>
-                    <p>Pão de forma</p>
-                    <img src="assets/icons/dustbin.svg" alt="Icone de lixeira">
-                </div>
-
-                <div class="flex">
-                    <div class="checkbox">
-                        <img src="assets/icons/check.svg" alt="Icone de verificado">
-                    </div>
-                    <p>Café preto</p>
-                    <img src="assets/icons/dustbin.svg" alt="Icone de lixeira">
-                </div>
-
-                <div class="flex">
-                    <div class="checkbox">
-                        <img src="assets/icons/check.svg" alt="Icone de verificado">
-                    </div>
-                    <p>Suco de laranja</p>
-                    <img src="assets/icons/dustbin.svg" alt="Icone de lixeira">
-                </div>
-
-                <div class="flex">
-                    <div class="checkbox">
-                        <img src="assets/icons/check.svg" alt="Icone de verificado">
-                    </div>
-                    <p>Biscoito</p>
-                    <img src="assets/icons/dustbin.svg" alt="Icone de lixeira">
-                </div>
             </div>
 
-            <div class="exclusion hidden">
+            <div class="exclusion">
                 <div class="flex exclusion-message">
                     <img src="assets/icons/alert.svg" alt="Icone de alerta">
                     <p>O item foi removido da lista!</p>
@@ -74,5 +43,7 @@
             </div>
         </section>
     </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
