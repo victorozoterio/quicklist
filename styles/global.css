@@ -44,3 +44,13 @@ h1 {
 .flex-col {
     flex-direction: column;
 }
+
+.desktop-only {
+    display: initial;
+}
+
+@media (width < 30em) {
+	.desktop-only {
+		display: none;
+	}
+}

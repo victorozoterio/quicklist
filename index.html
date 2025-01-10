@@ -12,9 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="flex">
-        <img src="assets/icons/logo.svg" alt="Logo">
-        <h1>quicklist</h1>
+    <header class="desktop-only">
+        <div class="flex">
+            <img src="assets/icons/logo.svg" alt="Logo">
+            <h1>quicklist</h1>
+        </div>
     </header>
 
     <main class="container">
@@ -26,7 +28,7 @@
         <section class="shopping">
             <h2>Compras da semana</h2>
             
-            <form method="post" class="flex">
+            <form method="post">
                 <input type="text" name="item" id="item" placeholder="Adicione um novo item" autofocus>
                 <button type="submit">Adicionar item</button>
             </form>

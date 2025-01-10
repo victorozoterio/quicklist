@@ -1,4 +1,5 @@
 form {
+    display: flex;
     gap: 1rem;
 
     & input {
@@ -6,8 +7,9 @@ form {
         color: var(--content-tertiary);
         width: 100%;
         border-radius: 0.75rem;
-        padding: 0.75rem;
         border: 2px solid var(--border-primary);
+        background-color: var(--always-white);
+        padding: 0.75rem;
 
         &:hover {
             border-color: var(--border-hover);
@@ -28,11 +30,22 @@ form {
         color: var(--always-white);
         width: 40%;
         border-radius: 0.75rem;
-        background-color: var(--color-brand);
         border: transparent;
+        background-color: var(--color-brand);
+        padding: 0.75rem;
 
         &:hover {
             background-color: var(--color-brand-hover);
         }
     }
+}
+
+@media (width < 30em) {
+	form {
+		display: grid;
+
+        & button {
+            width: 100%;
+        }
+	}
 }

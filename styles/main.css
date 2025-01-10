@@ -1,7 +1,7 @@
 main {
 	position: relative;
-	margin-top: 3.875rem;
 	width: 39rem;
+	margin-top: 3.875rem;
 	margin-inline: auto;
 
 	& .return {
@@ -116,4 +116,18 @@ main {
         transform: translateY(0);
 		opacity: 0;
     }
+}
+
+@media (width < 30em) {
+	main {
+		width: 100%;
+		margin-top: 2.125rem;
+		padding-inline: 2rem;
+
+		& .exclusion {
+			& div {
+				width: 19.375rem;
+			}
+		}
+	}
 }
